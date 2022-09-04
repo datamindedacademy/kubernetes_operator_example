@@ -1,0 +1,55 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+- apiGroups:
+  - dataminded.be
+  resources:
+  - presentations
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dataminded.be
+  resources:
+  - presentations/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - dataminded.be
+  resources:
+  - presentations/status
+  verbs:
+  - get
+  - patch
+  - update

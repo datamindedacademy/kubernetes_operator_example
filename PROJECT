@@ -1,0 +1,15 @@
+domain: dataminded.be
+layout:
+- go.kubebuilder.io/v3
+projectName: dataminded-presentation-operator
+repo: dataminded.be/presentation
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: dataminded.be
+  kind: Presentation
+  path: dataminded.be/presentation/api/v1
+  version: v1
+version: "3"

@@ -1,0 +1,6 @@
+apiVersion: dataminded.be/v1
+kind: Presentation
+metadata:
+  name: presentation-sample
+spec:
+  # TODO(user): Add fields here
