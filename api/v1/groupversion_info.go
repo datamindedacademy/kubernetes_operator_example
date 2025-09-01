@@ -15,8 +15,8 @@ limitations under the License.
 */
 
 // Package v1 contains API Schema definitions for the  v1 API group
-//+kubebuilder:object:generate=true
-//+groupName=dataminded.be
+// +kubebuilder:object:generate=true
+// +groupName=dataminded.be
 package v1
 
 import (
